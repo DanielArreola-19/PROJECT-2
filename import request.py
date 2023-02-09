@@ -1,4 +1,4 @@
-import requests
+import request
 from bs4 import BeautifulSoup
 url = "https://sfbay.craigslist.org/"
 # Make a GET request to the website
@@ -12,3 +12,4 @@ post_titles = soup.findall("a")
 # print the post titles
 for title in post_titles:
     print(title.text)
+# all the post titles should show
